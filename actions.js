@@ -9,34 +9,34 @@ export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 function addComment(text) {
     return {
         type: ADD_COMMENT,
-        text: 'nowy komentarz',
+        text,
         id: uuid.v4()
     }
 }
 function removeComment(id) {
     return {
         type: REMOVE_COMMENT,
-        id: 10
+        id
     }
 }
 function editComment(text, id) {
     return {
         type: EDIT_COMMENT,
-        id: 15,
-        text: 'wyedytowany tekst komentarza'
+        id,
+        text
     }
 }
 function thumbUpComment(id) {
     return {
 
         type: THUMB_UP_COMMENT,
-        id: 20,
+        id
     }
 }
 
 function thumbDownComment(id) {
     return {
         type: THUMB_DOWN_COMMENT,
-        id: 30,
+        id
     }
 }
