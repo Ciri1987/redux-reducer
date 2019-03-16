@@ -13,12 +13,14 @@ function addComment(text) {
         id: uuid.v4()
     }
 }
+
 function removeComment(id) {
     return {
         type: REMOVE_COMMENT,
         id
     }
 }
+
 function editComment(text, id) {
     return {
         type: EDIT_COMMENT,
@@ -26,6 +28,7 @@ function editComment(text, id) {
         text
     }
 }
+
 function thumbUpComment(id) {
     return {
 
