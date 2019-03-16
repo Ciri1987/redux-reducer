@@ -6,9 +6,6 @@ import {
     THUMB_DOWN_COMMENT
 } from './actions';
 
-const initialState = {
-    comments: [],
-};
 export function comments(state = [], action) {
     switch (action.type) {
 
